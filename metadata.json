@@ -1,0 +1,6 @@
+{
+  "name": "printsntwins",
+  "description": "Creative Gifts for Every Occasion — Personalized gifts, custom printing, handmade stationery, apparel, and curated gift hampers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,282 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Rich Gold Linear Gradients -->
+    <linearGradient id="goldSheen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDF2C7"/>
+      <stop offset="20%" stop-color="#E7C775"/>
+      <stop offset="45%" stop-color="#C59B3F"/>
+      <stop offset="65%" stop-color="#EFCF82"/>
+      <stop offset="85%" stop-color="#9E7325"/>
+      <stop offset="100%" stop-color="#DEB75B"/>
+    </linearGradient>
+
+    <linearGradient id="goldLight" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#AA7E28"/>
+      <stop offset="35%" stop-color="#FCEAB3"/>
+      <stop offset="70%" stop-color="#D4A745"/>
+      <stop offset="100%" stop-color="#FFF5D6"/>
+    </linearGradient>
+
+    <linearGradient id="goldDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E2BE68"/>
+      <stop offset="50%" stop-color="#A57A24"/>
+      <stop offset="100%" stop-color="#735012"/>
+    </linearGradient>
+
+    <radialGradient id="badgeBg" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#181513"/>
+      <stop offset="70%" stop-color="#0B0A09"/>
+      <stop offset="100%" stop-color="#050504"/>
+    </radialGradient>
+
+    <radialGradient id="glint" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="25%" stop-color="#FDF2C7" stop-opacity="0.7"/>
+      <stop offset="60%" stop-color="#C59B3F" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#C59B3F" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Drop Shadow for 3D metallic depth -->
+    <filter id="goldShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Ring with Polished Gold Finish -->
+  <circle cx="250" cy="250" r="236" fill="none" stroke="url(#goldSheen)" stroke-width="7" filter="url(#goldShadow)"/>
+  
+  <!-- Outer Ring Highlight / Rim -->
+  <circle cx="250" cy="250" r="240" fill="none" stroke="url(#goldLight)" stroke-width="1.5" opacity="0.8"/>
+  
+  <!-- Inner Badge Black Canvas -->
+  <circle cx="250" cy="250" r="232" fill="url(#badgeBg)"/>
+  
+  <!-- Inner Gold Accent Ring -->
+  <circle cx="250" cy="250" r="226" fill="none" stroke="url(#goldDark)" stroke-width="1.2" opacity="0.9"/>
+
+  <!-- Top-left and Bottom-right Ambient Sparkle Glints -->
+  <circle cx="102" cy="88" r="14" fill="url(#glint)" opacity="0.85"/>
+  <circle cx="430" cy="385" r="12" fill="url(#glint)" opacity="0.8"/>
+
+  <!-- Botanical Branch with delicate flowers on the left -->
+  <g filter="url(#goldShadow)">
+    <!-- Main stem -->
+    <path d="M195 295 C175 270 145 225 140 180 C138 160 142 140 150 125" fill="none" stroke="url(#goldLight)" stroke-width="2.2" stroke-linecap="round"/>
+    
+    <!-- Secondary twigs -->
+    <path d="M170 240 C150 235 135 215 125 195" fill="none" stroke="url(#goldSheen)" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M152 200 C135 185 120 170 110 150" fill="none" stroke="url(#goldSheen)" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M142 165 C130 145 128 130 125 115" fill="none" stroke="url(#goldLight)" stroke-width="1.4" stroke-linecap="round"/>
+    <path d="M146 135 C155 120 162 105 168 95" fill="none" stroke="url(#goldSheen)" stroke-width="1.4" stroke-linecap="round"/>
+
+    <!-- Flower Blossoms -->
+    <!-- Flower 1 (top right stem) -->
+    <g transform="translate(168, 93)">
+      <circle cx="-5" cy="0" r="3.5" fill="url(#goldLight)"/>
+      <circle cx="5" cy="0" r="3.5" fill="url(#goldLight)"/>
+      <circle cx="0" cy="-5" r="3.5" fill="url(#goldLight)"/>
+      <circle cx="0" cy="5" r="3.5" fill="url(#goldLight)"/>
+      <circle cx="0" cy="0" r="2.5" fill="url(#goldDark)"/>
+    </g>
+
+    <!-- Flower 2 (top left) -->
+    <g transform="translate(125, 115)">
+      <circle cx="-4" cy="0" r="3.2" fill="url(#goldSheen)"/>
+      <circle cx="4" cy="0" r="3.2" fill="url(#goldSheen)"/>
+      <circle cx="0" cy="-4" r="3.2" fill="url(#goldSheen)"/>
+      <circle cx="0" cy="4" r="3.2" fill="url(#goldSheen)"/>
+      <circle cx="0" cy="0" r="2.2" fill="url(#goldDark)"/>
+    </g>
+
+    <!-- Flower 3 (mid left) -->
+    <g transform="translate(108, 150)">
+      <circle cx="-4" cy="-2" r="3.5" fill="url(#goldLight)"/>
+      <circle cx="4" cy="-2" r="3.5" fill="url(#goldLight)"/>
+      <circle cx="-2" cy="4" r="3.5" fill="url(#goldLight)"/>
+      <circle cx="3" cy="4" r="3.5" fill="url(#goldLight)"/>
+      <circle cx="0" cy="0" r="2.2" fill="url(#goldDark)"/>
+    </g>
+
+    <!-- Flower 4 (lower mid left) -->
+    <g transform="translate(122, 195)">
+      <circle cx="-4.5" cy="0" r="4" fill="url(#goldSheen)"/>
+      <circle cx="4.5" cy="0" r="4" fill="url(#goldSheen)"/>
+      <circle cx="0" cy="-4.5" r="4" fill="url(#goldSheen)"/>
+      <circle cx="0" cy="4.5" r="4" fill="url(#goldSheen)"/>
+      <circle cx="0" cy="0" r="2.8" fill="url(#goldDark)"/>
+    </g>
+
+    <!-- Flower 5 (lower) -->
+    <g transform="translate(138, 238)">
+      <circle cx="-4" cy="0" r="3.5" fill="url(#goldLight)"/>
+      <circle cx="4" cy="0" r="3.5" fill="url(#goldLight)"/>
+      <circle cx="0" cy="-4" r="3.5" fill="url(#goldLight)"/>
+      <circle cx="0" cy="4" r="3.5" fill="url(#goldLight)"/>
+      <circle cx="0" cy="0" r="2.2" fill="url(#goldDark)"/>
+    </g>
+
+    <!-- Flower Buds / Berries -->
+    <circle cx="140" cy="110" r="2.6" fill="url(#goldLight)"/>
+    <circle cx="150" cy="148" r="2.8" fill="url(#goldSheen)"/>
+    <circle cx="162" cy="180" r="2.5" fill="url(#goldLight)"/>
+    <circle cx="178" cy="265" r="3" fill="url(#goldLight)"/>
+    <circle cx="190" cy="285" r="3" fill="url(#goldSheen)"/>
+  </g>
+
+  <!-- Monogram P & T (Intertwined Serif Masterpiece) -->
+  <g filter="url(#goldShadow)">
+    
+    <!-- Letter P -->
+    <!-- P Stem -->
+    <path d="M190 102 
+             L232 102 
+             L232 110 
+             C223 111 221 113 221 122 
+             L221 270 
+             C221 279 223 281 232 282 
+             L232 290 
+             L175 290 
+             L175 282 
+             C184 281 186 279 186 270 
+             L186 122 
+             C186 113 184 111 175 110 
+             L175 102 
+             Z" 
+          fill="url(#goldSheen)"/>
+    
+    <!-- P Bowl -->
+    <path d="M221 108 
+             C245 106 280 110 295 132 
+             C308 150 306 182 288 200 
+             C272 216 242 220 221 220 
+             L221 202 
+             C240 202 265 198 274 182 
+             C284 165 283 140 270 127 
+             C258 116 238 114 221 114 
+             Z" 
+          fill="url(#goldLight)"/>
+
+    <!-- Letter T -->
+    <!-- T Top Bar -->
+    <path d="M245 102 
+             L385 102 
+             L385 125 
+             C380 113 372 110 355 110 
+             L322 110 
+             L322 270 
+             C322 279 324 281 333 282 
+             L333 290 
+             L276 290 
+             L276 282 
+             C285 281 287 279 287 270 
+             L287 110 
+             L265 110 
+             C255 110 248 114 245 125 
+             Z" 
+          fill="url(#goldSheen)"/>
+
+  </g>
+
+  <!-- Satin Ribbon & Bow Intertwined with Heart Loop -->
+  <g filter="url(#goldShadow)">
+    
+    <!-- Ribbon Loop Upper-Right forming HEART shape -->
+    <path d="M298 198 
+             C320 180 345 145 365 130 
+             C385 115 410 130 405 155 
+             C400 178 370 195 340 215 
+             C315 228 302 215 298 198 Z" 
+          fill="url(#goldLight)" stroke="url(#goldDark)" stroke-width="1"/>
+
+    <!-- Heart loop inner cutout for 3D ribbon loop -->
+    <path d="M362 140 
+             C378 128 396 138 392 153 
+             C388 168 368 182 345 198 
+             C360 175 375 155 362 140 Z" 
+          fill="#0F0D0C" opacity="0.95"/>
+
+    <!-- Flowing Ribbon Upper Left Loop -->
+    <path d="M290 195 
+             C255 160 210 162 180 190 
+             C155 215 162 250 190 260 
+             C225 272 270 230 290 198 Z" 
+          fill="url(#goldLight)" opacity="0.95"/>
+
+    <path d="M190 205 
+             C212 182 245 185 270 205 
+             C248 230 215 245 188 235 
+             C178 228 178 215 190 205 Z" 
+          fill="#0B0A09" opacity="0.9"/>
+
+    <!-- Flowing Tail: Cascading to Right -->
+    <path d="M305 210 
+             C335 205 385 208 415 235 
+             C435 255 425 290 395 300 
+             C380 305 365 298 375 288 
+             C395 270 395 255 380 245 
+             C360 232 325 228 300 220 Z" 
+          fill="url(#goldSheen)"/>
+
+    <!-- Flowing Tail: Cascading to Left & Center Base -->
+    <path d="M285 210 
+             C250 225 230 270 220 315 
+             C228 322 238 325 240 315 
+             C245 285 260 250 288 225 Z" 
+          fill="url(#goldLight)"/>
+
+    <!-- Center Bow Knot -->
+    <ellipse cx="293" cy="204" rx="14" ry="12" fill="url(#goldLight)" stroke="url(#goldDark)" stroke-width="1"/>
+    <!-- Knot core highlight -->
+    <ellipse cx="292" cy="202" rx="7" ry="6" fill="#FFF2C2" opacity="0.8"/>
+  </g>
+
+  <!-- Sparkle Stars and Little Hearts Floating -->
+  <g fill="url(#goldLight)">
+    <!-- 4-Point Star top-left -->
+    <path d="M102 182 Q102 174 107 174 Q102 174 102 166 Q102 174 97 174 Q102 174 102 182 Z" filter="url(#softGlow)"/>
+    <path d="M136 295 Q136 288 140 288 Q136 288 136 281 Q136 288 132 288 Q136 288 136 295 Z"/>
+
+    <!-- 4-Point Star right -->
+    <path d="M422 180 Q422 170 428 170 Q422 170 422 160 Q422 170 416 170 Q422 170 422 180 Z" filter="url(#softGlow)"/>
+    <path d="M370 260 Q370 252 375 252 Q370 252 370 244 Q370 252 365 252 Q370 252 370 260 Z"/>
+
+    <!-- Little Hearts -->
+    <!-- Heart far right -->
+    <path d="M435 220 C435 217 432 215 429 215 C426 215 424 217 423 219 C422 217 420 215 417 215 C414 215 411 217 411 220 C411 225 418 230 423 234 C428 230 435 225 435 220 Z"/>
+    
+    <!-- Heart above t in twins -->
+    <path d="M366 340 C366 337 363.5 335 361 335 C358.5 335 357 337 356 338.5 C355 337 353.5 335 351 335 C348.5 335 346 337 346 340 C346 344 352 348 356 352 C360 348 366 344 366 340 Z"/>
+  </g>
+
+  <!-- Brand Typography: "printsntwins" -->
+  <g filter="url(#goldShadow)">
+    <text x="250" y="380" 
+          font-family="'Playfair Display', 'Didot', 'Bodoni MT', 'Cinzel', serif" 
+          font-size="44" 
+          font-weight="600" 
+          letter-spacing="2.5" 
+          text-anchor="middle" 
+          fill="url(#goldLight)">
+      printsntwins
+    </text>
+  </g>
+
+  <!-- Bottom Divider Line with Heart Accent -->
+  <g filter="url(#goldShadow)">
+    <!-- Left line -->
+    <line x1="165" y1="405" x2="235" y2="405" stroke="url(#goldSheen)" stroke-width="1.8" stroke-linecap="round"/>
+    
+    <!-- Center Heart -->
+    <path d="M250 412 C250 412 242 406 242 401 C242 398 244.5 396 247.5 396 C249.5 396 250 398 250 398 C250 398 250.5 396 252.5 396 C255.5 396 258 398 258 401 C258 406 250 412 250 412 Z" 
+          fill="url(#goldLight)"/>
+
+    <!-- Right line -->
+    <line x1="265" y1="405" x2="335" y2="405" stroke="url(#goldSheen)" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+
+</svg>

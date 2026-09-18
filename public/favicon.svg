@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <linearGradient id="favGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2C2"/>
+      <stop offset="50%" stop-color="#D4A745"/>
+      <stop offset="100%" stop-color="#9E7325"/>
+    </linearGradient>
+  </defs>
+  <circle cx="250" cy="250" r="236" fill="#0C0B0A" stroke="url(#favGold)" stroke-width="20"/>
+  <!-- P & T Monogram in gold -->
+  <text x="250" y="320" font-family="serif" font-size="220" font-weight="bold" text-anchor="middle" fill="url(#favGold)">PT</text>
+  <circle cx="250" cy="180" r="14" fill="#FFF2C2"/>
+</svg>
